@@ -74,3 +74,4 @@ const WatchScreen = () => {
 }
 
 export default WatchScreen
+

@@ -56,3 +56,4 @@ const Comments = ({ videoId, totalComments }) => {
 }
 
 export default Comments
+

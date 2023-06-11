@@ -95,3 +95,4 @@ const VideoMetaData = ({ video: { snippet, statistics }, videoId }) => {
 }
 
 export default VideoMetaData
+

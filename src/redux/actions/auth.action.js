@@ -1,4 +1,4 @@
-import firebase from "../../firebase";
+
 import { GoogleAuthProvider } from "firebase/auth";
 import { LOGIN_FAIL, LOGIN_REQUEST, LOGIN_SUCCESS, LOAD_PROFILE, LOG_OUT } from "../actionType";
 

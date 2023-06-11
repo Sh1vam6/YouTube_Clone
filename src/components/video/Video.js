@@ -30,7 +30,7 @@ const Video = ({ video, channelScreen }) => {
 
    const _videoId = id?.videoId || contentDetails?.videoId || id
 
-   const navigate = useNavigate()
+   const navigate= useNavigate()
 
    useEffect(() => {
       const get_video_details = async () => {

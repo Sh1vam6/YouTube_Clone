@@ -8,7 +8,7 @@ import moment from 'moment'
 import numeral from 'numeral'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Col, Row } from 'react-bootstrap'
-import { useHistory, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const VideoHorizontal = ({ video, searchScreen, subScreen }) => {
    const {
@@ -129,3 +129,4 @@ const VideoHorizontal = ({ video, searchScreen, subScreen }) => {
 }
 
 export default VideoHorizontal
+

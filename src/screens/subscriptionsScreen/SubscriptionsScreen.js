@@ -31,3 +31,4 @@ const SubscriptionsScreen = () => {
 }
 
 export default SubscriptionsScreen
+
