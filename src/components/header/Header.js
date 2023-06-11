@@ -6,6 +6,7 @@ import { MdNotifications, MdApps } from 'react-icons/md'
 
 import './_header.scss'
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 
 const Header = ({handleToggleSidebar}) => {
@@ -19,6 +20,8 @@ const Header = ({handleToggleSidebar}) => {
 
     navigate(`/search/${input}`)
    }
+
+   const {photoURL} = useSelector(state=> state.auth?.user)
 
 
 
@@ -52,7 +55,7 @@ const Header = ({handleToggleSidebar}) => {
             <div className='header__icons'>
                 <MdNotifications size={28} />
                 <MdApps size={28} />
-                <img  alt='avatar' />
+                <img src={photoURL}  alt='avatar' />
             </div>
         </div>
     )

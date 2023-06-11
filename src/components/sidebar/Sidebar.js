@@ -16,7 +16,7 @@ import {
 } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 
- const Sidebar = ({sidebar, handleToggleSidebar}) => {
+const Sidebar = ({ sidebar, handleToggleSidebar }) => {
 
    const dispatch = useDispatch()
    const logOutHandler = () => {
@@ -25,24 +25,26 @@ import { Link } from 'react-router-dom'
 
 
 
-  return (
-    <nav
+   return (
+      <nav
          className={sidebar ? 'sidebar open' : 'sidebar'}
          onClick={() => handleToggleSidebar(false)}>
-         
+
+         <Link to='/'>
             <li>
                <MdHome size={23} />
                <span>Home</span>
             </li>
-         
-      
-            <Link>
+         </Link>
+
+
+         <Link to='/feed/subscriptions'>
             <li>
                <MdSubscriptions size={23} />
                <span>Subscriptions</span>
             </li>
-        
-            </Link>
+
+         </Link>
 
          <li>
             <MdThumbUp size={23} />
@@ -72,7 +74,7 @@ import { Link } from 'react-router-dom'
 
          <hr />
       </nav>
-  )
+   )
 }
 
 export default Sidebar
